@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/PotatoTurtles/Members-Only-Message-Board#readme",
   "dependencies": {
+    "bcrypt": "^5.1.0",
     "connect-pg-simple": "^10.0.0",
     "dotenv": "^17.2.3",
     "ejs": "^4.0.1",
