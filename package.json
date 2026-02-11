@@ -1,0 +1,31 @@
+{
+  "name": "members-only-message-board",
+  "version": "1.0.0",
+  "description": "Message board where certain details are hidden from the user if they aren't signed in. Authentication done with passport.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PotatoTurtles/Members-Only-Message-Board.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/PotatoTurtles/Members-Only-Message-Board/issues"
+  },
+  "homepage": "https://github.com/PotatoTurtles/Members-Only-Message-Board#readme",
+  "dependencies": {
+    "connect-pg-simple": "^10.0.0",
+    "dotenv": "^17.2.3",
+    "ejs": "^4.0.1",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "pg": "^8.18.0"
+  }
+}

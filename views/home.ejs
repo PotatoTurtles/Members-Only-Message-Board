@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Home</h1>
+    <a href="/login">Login</a>
+    <a href="/register">Sign Up</a>
+    <a href="/logout">Logout</a>
+    <a href="/new">New Messsage</a>
+    
+    <% messages.forEach((e)=>{ %>
+        <div style="border: 2px black solid; max-width: 40vw;">
+            <div style="display: flex;">
+                <h2><%=auth?e.name:"***"%>:</h2>
+                <h3><%=auth?e.title:"***"%></h3>
+            </div>
+            <div style="display: flex;">
+                <p><%=auth?e.date_posted:"***"%></p>
+                <form action="/like" method="post">
+                    <input type="hidden" name="messageId" value="<%=e.num%>">
+                    <button type="submit">Likes:<%=e.likes%></button>
+                </form>
+            </div>
+            <p><%=e.message%></p>
+        </div>
+    <%}) %>
+</body>
+</html>
